@@ -115,7 +115,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/Appareil_de_nettoyage_d_oreilles_high-tech.png",
+        "image": "shopify://shop_images/Capture_d_ecran_2025-05-22_a_20.29.53.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -259,7 +259,7 @@
       ],
       "settings": {
         "full_width": true,
-        "product": "",
+        "product": "audipro-nettoyant-doreilles-avec-camera-hd-integree",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
