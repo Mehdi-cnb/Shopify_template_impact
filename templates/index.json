@@ -201,13 +201,13 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": true
           }
         },
         "rating": {
           "type": "rating",
           "settings": {
-            "show_empty": false
+            "show_empty": true
           }
         },
         "separator": {
@@ -275,44 +275,105 @@
         "input_text_color": ""
       }
     },
+    "impact_text_hJm6HU": {
+      "type": "impact-text",
+      "blocks": {
+        "item_KPNymx": {
+          "type": "item",
+          "settings": {
+            "title": "95,5%",
+            "subheading": "Taux de satisfaction de nos clients !",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_KPNymx"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 0.7,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "#000000",
+        "heading_gradient": "linear-gradient(180deg, rgba(196, 102, 238, 1), rgba(26, 217, 241, 1) 100%)",
+        "text_color": "",
+        "button_background": "#f2f2f2",
+        "button_text_color": "#f2f2f2"
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
         "166442457738b23caf-0": {
           "type": "item",
           "settings": {
-            "title": "Do you ship overseas?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "title": "Comment utiliser AudiPro ?",
+            "content": "<p>AudiPro est conçu pour être simple et intuitif. Il vous suffit de le connecter à votre smartphone via l’application dédiée, d’allumer la caméra, puis de suivre en temps réel les images diffusées à l’écran. Une lumière LED intégrée permet une visibilité optimale. En quelques minutes, vous pouvez nettoyer vos oreilles de manière précise et sécurisée. Un guide d’utilisation illustré est fourni, et notre service client est disponible pour vous accompagner si besoin.</p>"
           }
         },
         "166442457738b23caf-1": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "title": "Est-ce que le produit est risqué pour les oreilles ?",
+            "content": "<p>Chez AudiPro, la sécurité passe avant tout. C’est pourquoi notre appareil est <strong>recommandé par des professionnels de santé</strong> pour un usage domestique, en complément d’une bonne hygiène auriculaire. Il est équipé d’embouts souples en silicone médical, conçus pour respecter la sensibilité du conduit auditif, et permet un nettoyage <strong>visuel, précis et non invasif</strong> grâce à sa caméra HD. Contrairement aux coton-tiges, qui peuvent tasser le cérumen, cet appareil permet une extraction contrôlée, réduisant les risques de blessures. Bien sûr, en cas de pathologie ORL connue, l’avis de votre médecin reste essentiel.</p>"
           }
         },
         "166442457738b23caf-2": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "title": "Est-ce que le produit est vraiment efficace ?",
+            "content": "<p>Grâce à sa caméra haute définition et sa lumière LED intégrée, AudiPro permet un nettoyage précis, en temps réel. Les utilisateurs rapportent une sensation immédiate de propreté et apprécient de pouvoir visualiser le résultat. Il s’agit d’un outil bien plus performant que les méthodes classiques, car il allie technologie et ergonomie pour garantir une efficacité visible.</p>"
+          }
+        },
+        "item_NnpQGX": {
+          "type": "item",
+          "settings": {
+            "title": "Est-ce que l'appareil fonctionne avec mon téléphone ?",
+            "content": "<p>Oui. Notre application est compatible avec <strong>tous les smartphones récents</strong>, qu’ils fonctionnent sous <strong>Android ou iOS (iPhone)</strong>. Il suffit de télécharger l’application via le Play Store ou l’App Store, de connecter l’appareil en Wi-Fi local, et vous pouvez l’utiliser immédiatement, sans configuration complexe. Une compatibilité universelle pour une utilisation sans souci.</p>"
+          }
+        },
+        "item_cbUdPp": {
+          "type": "item",
+          "settings": {
+            "title": "Est ce que le produit est garanti ?",
+            "content": "<p>Oui, vous bénéficiez d’une <strong>garantie 100 % satisfait ou remboursé pendant 90 jours</strong>. Essayez l’appareil chez vous, et si vous n’êtes pas entièrement convaincu, nous vous remboursons sans discussion. De plus, il est couvert par une <strong>garantie constructeur de 12 mois</strong> en cas de défaut.</p>"
+          }
+        },
+        "item_mByjy8": {
+          "type": "item",
+          "settings": {
+            "title": "Quels sont les délais de livraison ?",
+            "content": "<p>Nous proposons une livraison rapide et suivie. Les délais moyens sont de <strong>5 à 10 jours ouvrés</strong>, selon votre lieu de résidence.</p>"
           }
         }
       },
       "block_order": [
         "166442457738b23caf-0",
         "166442457738b23caf-1",
-        "166442457738b23caf-2"
+        "166442457738b23caf-2",
+        "item_NnpQGX",
+        "item_cbUdPp",
+        "item_mByjy8"
       ],
       "settings": {
         "full_width": false,
         "subheading": "",
         "title": "FAQ",
-        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
-        "team_avatar_width": 160,
-        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
-        "answer_time": "Average answer time: 24h",
+        "content": "",
+        "team_avatar": "shopify://shop_images/Logo_AudiPro_7142b018-1aed-49c8-ab26-a073ab6d2e48.png",
+        "team_avatar_width": 240,
+        "support_hours": "Notre service après vente est disponible 7/7j de 9h à 18h",
+        "answer_time": "Réponse en moins de 24h",
         "button_text": "",
         "button_url": "",
         "text_position": "center",
@@ -334,6 +395,7 @@
     "image-with-text-overlay",
     "multi_column_AHq3tY",
     "featured-product",
+    "impact_text_hJm6HU",
     "faq"
   ]
 }
