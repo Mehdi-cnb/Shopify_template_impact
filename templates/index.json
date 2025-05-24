@@ -133,7 +133,7 @@
             "column_size": "3",
             "title": "Maxime L.",
             "heading_tag": "h4",
-            "content": "<p>Très bon outil avec cette LED et cette caméra, j'ai pensé que je n'avais pas de cire mais ce que j'ai trouvé m'a surpris.</p>",
+            "content": "<p>★★★★★</p><p>Je suis choqué du résultat, c'est un ami qui m'a recommandé le produit et le résultat est juste incroyable ! Je n'ai jamais pensé que je pouvais mieux entendre en me nettoyant les oreilles.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -146,7 +146,7 @@
             "column_size": "3",
             "title": "Léana C.",
             "heading_tag": "h4",
-            "content": "<p>La commande est arrivée rapidement et en bon état. Le produit fonctionne parfaitement, il est très facile à utiliser et se connecte facilement au téléphone.</p>",
+            "content": "<p>★★★★★</p><p>La commande est arrivée rapidement et en bon état. Le produit fonctionne parfaitement, il est très facile à utiliser et se connecte facilement au téléphone.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -155,11 +155,11 @@
         "item_d9hDdw": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Capture_d_ecran_2025-05-21_a_22.59.47_9234f5fe-53e7-438c-ba68-a0fed5c07d83.png",
+            "image": "shopify://shop_images/Capture_d_ecran_2025-05-24_a_22.18.57.png",
             "column_size": "3",
-            "title": "Oumaima A.",
+            "title": "Virginie A.",
             "heading_tag": "h4",
-            "content": "<p>Je suis choquée du résultat, c'est une amie qui m'a recommandé le produit et le résultat est juste incroyable ! Je n'ai jamais pensé que je pouvais mieux entendre en me nettoyant les oreilles.</p>",
+            "content": "<p>★★★★★</p><p>Très bon outil avec cette LED et cette caméra, j'ai pensé que je n'avais pas de cire mais ce que j'ai trouvé m'a surpris.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -311,6 +311,41 @@
         "button_text_color": "#f2f2f2"
       }
     },
+    "blog_posts_9FK8Yr": {
+      "type": "blog-posts",
+      "blocks": {
+        "article_MPFiKQ": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "article_MPFiKQ"
+      ],
+      "name": "Featured blog post",
+      "settings": {
+        "full_width": true,
+        "show_excerpt": true,
+        "show_date": false,
+        "show_author": true,
+        "show_comments_count": false,
+        "show_category": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -396,6 +431,7 @@
     "multi_column_AHq3tY",
     "featured-product",
     "impact_text_hJm6HU",
+    "blog_posts_9FK8Yr",
     "faq"
   ]
 }
