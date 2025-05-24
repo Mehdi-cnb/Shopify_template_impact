@@ -381,6 +381,41 @@
         "spacing": "small"
       }
     },
+    "media_with_text_CtNJWp": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_9fheC3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/earcontrol_banner.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "AudiPro, votre nettoyant d'oreilles efficace et simple à utiliser",
+            "content": "<p><strong>Il suffit de connecter votre téléphone au Wi-Fi, d’installer l’application dédiée, et votre produit est prêt à être utilisé. Rien de plus simple, non ?</strong> En quelques secondes, vous accédez à une vue en temps réel de l’intérieur de votre oreille, pour un nettoyage précis, doux et sans risque.</p><p><strong>Recommandé par des professionnels de santé</strong>, cet appareil révolutionne l’hygiène auriculaire.<br/><br/>Prenez soin de votre audition, adoptez enfin une solution moderne, durable et validée.<br/><br/>👉 <strong>Commandez maintenant et découvrez la différence dès la première utilisation.</strong></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_9fheC3"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -468,6 +503,7 @@
     "impact_text_hJm6HU",
     "media_with_text_PTfqg3",
     "media_with_text_8HfWV6",
+    "media_with_text_CtNJWp",
     "faq"
   ]
 }
