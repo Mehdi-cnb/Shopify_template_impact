@@ -204,6 +204,12 @@
             "show_taxes_notice": true
           }
         },
+        "liquid_WgUa3L": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"display: flex; align-items: center; background-color: #FAFAFA; padding: 8px 8px; border-radius: 8px; font-family: 'Poppins', sans-serif; width: fit-content; margin: 10px 0; text-align: left;\">\n  <!-- Étoiles -->\n  <img src=\"https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg\" alt=\"5 étoiles\" style=\"width: 105px; margin-right: 8px;\">\n  <!-- Texte -->\n  <div style=\"color: #4A4A4A; font-size: 12px; text-align: left;\">\n    <span style=\"font-weight: 400;\">Noté</span> <span style=\"color: #000000; font-weight: 700;\">4,7</span> <span style=\"font-weight: 400;\">sur</span> <span style=\"color: #000000; font-weight: 700;\">plus de 10 000 avis</span>\n  </div>\n</div>"
+          }
+        },
         "separator": {
           "type": "separator",
           "settings": {}
@@ -233,16 +239,10 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "",
+            "atc_button_background": "#00a341",
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
-          }
-        },
-        "liquid_WgUa3L": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"display: flex; align-items: center; background-color: #FAFAFA; padding: 8px 8px; border-radius: 8px; font-family: 'Poppins', sans-serif; width: fit-content; margin: 10px 0; text-align: left;\">\n  <!-- Étoiles -->\n  <img src=\"https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg\" alt=\"5 étoiles\" style=\"width: 105px; margin-right: 8px;\">\n  <!-- Texte -->\n  <div style=\"color: #4A4A4A; font-size: 12px; text-align: left;\">\n    <span style=\"font-weight: 400;\">Note</span> <span style=\"color: #000000; font-weight: 700;\">4,7</span> <span style=\"font-weight: 400;\">sur</span> <span style=\"color: #000000; font-weight: 700;\">plus de 8900 avis</span>\n  </div>\n</div>"
           }
         }
       },
@@ -250,19 +250,19 @@
         "title",
         "badges",
         "price",
+        "liquid_WgUa3L",
         "separator",
         "description",
         "variant-picker",
         "quantity-selector",
-        "buy-buttons",
-        "liquid_WgUa3L"
+        "buy-buttons"
       ],
       "settings": {
         "full_width": true,
         "product": "audipro-nettoyant-doreilles-avec-camera-hd-integree",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
+        "mobile_media_size": "contained",
         "mobile_carousel_control": "floating_dots",
         "enable_video_autoplay": true,
         "enable_video_looping": false,
