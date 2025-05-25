@@ -244,6 +244,12 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
+        },
+        "liquid_JXnnVy": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding: 10px 0;\">\n  <!-- Visa -->\n  <img src=\"https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png\" alt=\"Visa\" width=\"50\" height=\"30\" style=\"object-fit: contain;\">\n\n  <!-- Mastercard -->\n  <img src=\"https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png\" alt=\"Mastercard\" width=\"50\" height=\"30\" style=\"object-fit: contain;\">\n</div>"
+          }
         }
       },
       "block_order": [
@@ -255,7 +261,8 @@
         "description",
         "variant-picker",
         "quantity-selector",
-        "buy-buttons"
+        "buy-buttons",
+        "liquid_JXnnVy"
       ],
       "settings": {
         "full_width": true,
@@ -424,9 +431,9 @@
           "settings": {
             "image": "shopify://shop_images/Docteur_1.jpg",
             "column_size": "3",
-            "title": "Column title",
+            "title": "Jerôme Buisson",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "content": "<p><em>\"Ce cure-oreille en silicone retire délicatement le cérumen sans l’enfoncer. Son embout souple et doux permet un nettoyage efficace et sans risque.\"</em></p><p>ORL - Hôpital de la Miséricorde - Ajaccio, France</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -437,9 +444,9 @@
           "settings": {
             "image": "shopify://shop_images/Docteur_2.jpg",
             "column_size": "3",
-            "title": "Column title",
+            "title": "Shannon Klingman",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "content": "<p><em>\"Ce que j’apprécie avec le nettoyeur AudiPro, c’est son embout en silicone qui permet un nettoyage sûr et maîtrisé. Une solution simple, efficace et sans danger pour le conduit auditif.\"</em></p><p>ORL - Hôpital Princesse Royale - Haywards Heath, Royaume-Uni</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -450,9 +457,9 @@
           "settings": {
             "image": "shopify://shop_images/Docteur_3.jpg",
             "column_size": "3",
-            "title": "Column title",
+            "title": "Miguel Santos",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "content": "<p><em>\"Conçu pour les personnes sujettes aux bouchons de cérumen, cet appareil utilise un embout en silicone souple pour un retrait efficace, sans irritation ni risque pour le conduit auditif.\"</em></p><p>ORL - Hôpital Comarcal de Inca - Inca, Espagne</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
