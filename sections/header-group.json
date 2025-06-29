@@ -35,10 +35,10 @@
       ],
       "settings": {
         "enable_sticky": true,
-        "text_size": "text-base",
+        "text_size": "text-xs",
         "navigation_mode": "scrolling",
         "scrolling_speed": 10,
-        "background": "#5bacb9",
+        "background": "#6f4848",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -48,8 +48,9 @@
       "settings": {
         "enable_sticky": false,
         "hide_on_scroll": false,
-        "logo_max_width": 160,
-        "logo_mobile_max_width": 100,
+        "logo": "shopify://shop_images/Logo_Epurelle.png",
+        "logo_max_width": 60,
+        "logo_mobile_max_width": 30,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
