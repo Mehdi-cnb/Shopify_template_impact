@@ -1,0 +1,91 @@
+{% if product %}
+  <section
+    id="kaching-bundle-section"
+    class="kaching-bundle-wrapper"
+    data-product-id="{{ product.id }}"
+  >
+    {% if section.settings.title != blank %}
+      <h3 class="kaching-bundle-title">
+        {{ section.settings.title }}
+      </h3>
+    {% endif %}
+
+    {% if section.settings.subtitle != blank %}
+      <p class="kaching-bundle-subtitle">
+        {{ section.settings.subtitle }}
+      </p>
+    {% endif %}
+
+    <!-- Kaching injecte automatiquement le bundle ici -->
+    <div
+      class="kaching-bundle-container"
+      data-kaching-bundle
+      data-product-id="{{ product.id }}"
+    ></div>
+
+    {% if section.settings.reassurance_text != blank %}
+      <p class="kaching-bundle-reassurance">
+        {{ section.settings.reassurance_text }}
+      </p>
+    {% endif %}
+  </section>
+{% endif %}
+
+<style>
+.kaching-bundle-wrapper {
+  margin: 24px 0;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.kaching-bundle-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.kaching-bundle-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.kaching-bundle-reassurance {
+  font-size: 13px;
+  color: #777;
+  margin-top: 12px;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Kaching Bundle",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre",
+      "default": "Choisissez votre offre"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sous-titre",
+      "default": "Plus vous achetez, plus vous économisez"
+    },
+    {
+      "type": "text",
+      "id": "reassurance_text",
+      "label": "Texte de réassurance",
+      "default": "Livraison rapide • Paiement sécurisé • Garantie satisfait ou remboursé"
+    }
+  ],
+  "templates": ["product"],
+  "presets": [
+    {
+      "name": "Kaching Bundle"
+    }
+  ]
+}
+{% endschema %}
