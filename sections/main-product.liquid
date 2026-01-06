@@ -38,7 +38,6 @@
     }
   }
 </style>
-  {% render 'driftmats-bundle', product: product %}
 <div {% render 'section-properties', tight: true %}>
   <div class="product">
     {%- if product.media.size > 0 -%}
@@ -48,7 +47,7 @@
     {%- render 'product-info', product: product, update_url: true -%}
   </div>
 </div>
-
+  {% render 'driftmats-bundle', product: product %}
 {%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
 
 {%- if section.settings.show_fixed_add_to_cart and product.available and buy_buttons_block != blank -%}
