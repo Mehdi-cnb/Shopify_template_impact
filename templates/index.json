@@ -9,112 +9,6 @@
  */
 {
   "sections": {
-    "featured_product_JFCyXQ": {
-      "type": "featured-product",
-      "blocks": {
-        "vendor_4HGLj8": {
-          "type": "vendor",
-          "settings": {}
-        },
-        "title_TWMbF8": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h5"
-          }
-        },
-        "badges_kzLdQD": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price_P8kkHU": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "rating_mCcFP8": {
-          "type": "rating",
-          "settings": {
-            "show_empty": true
-          }
-        },
-        "separator_Gr93P8": {
-          "type": "separator",
-          "settings": {}
-        },
-        "description_nmCeRH": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false
-          }
-        },
-        "sku_hmebBh": {
-          "type": "sku",
-          "settings": {}
-        },
-        "variant_picker_QDgFKx": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_mode": "block",
-            "color_mode": "color",
-            "size_chart_page": ""
-          }
-        },
-        "quantity_selector_6ThRc4": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_b9xUHC": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": true,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        },
-        "pickup_availability_CNjjKX": {
-          "type": "pickup_availability",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "vendor_4HGLj8",
-        "title_TWMbF8",
-        "badges_kzLdQD",
-        "price_P8kkHU",
-        "rating_mCcFP8",
-        "separator_Gr93P8",
-        "description_nmCeRH",
-        "sku_hmebBh",
-        "variant_picker_QDgFKx",
-        "quantity_selector_6ThRc4",
-        "buy_buttons_b9xUHC",
-        "pickup_availability_CNjjKX"
-      ],
-      "name": "Featured product",
-      "settings": {
-        "full_width": true,
-        "product": "leggings-3d-sylea-redefine-your-shape",
-        "desktop_media_width": 50,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "thumbnails",
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "#f0f0f0",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
-      }
-    },
     "multi_column_AHq3tY": {
       "type": "multi-column",
       "blocks": {
@@ -284,6 +178,112 @@
         "heading_gradient": ""
       }
     },
+    "featured_product_JFCyXQ": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_4HGLj8": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_TWMbF8": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h5"
+          }
+        },
+        "badges_kzLdQD": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_P8kkHU": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_mCcFP8": {
+          "type": "rating",
+          "settings": {
+            "show_empty": true
+          }
+        },
+        "separator_Gr93P8": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_nmCeRH": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "sku_hmebBh": {
+          "type": "sku",
+          "settings": {}
+        },
+        "variant_picker_QDgFKx": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_6ThRc4": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_b9xUHC": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_CNjjKX": {
+          "type": "pickup_availability",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_4HGLj8",
+        "title_TWMbF8",
+        "badges_kzLdQD",
+        "price_P8kkHU",
+        "rating_mCcFP8",
+        "separator_Gr93P8",
+        "description_nmCeRH",
+        "sku_hmebBh",
+        "variant_picker_QDgFKx",
+        "quantity_selector_6ThRc4",
+        "buy_buttons_b9xUHC",
+        "pickup_availability_CNjjKX"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "full_width": true,
+        "product": "leggings-3d-sylea-redefine-your-shape",
+        "desktop_media_width": 50,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#f0f0f0",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
     "slideshow_UAAbiC": {
       "type": "slideshow",
       "blocks": {
@@ -409,7 +409,7 @@
         "transition_type": "fade_with_text",
         "autoplay": false,
         "cycle_speed": 6,
-        "background": "#F2F2F2",
+        "background": "#f2f2f2",
         "background_gradient": ""
       }
     },
@@ -499,10 +499,10 @@
     }
   },
   "order": [
-    "featured_product_JFCyXQ",
-    "multi_column_AHq3tY",
     "image_with_text_overlay_KUrKhE",
+    "multi_column_AHq3tY",
     "images_with_text_scrolling_VMCyeh",
+    "featured_product_JFCyXQ",
     "slideshow_UAAbiC",
     "faq"
   ]
