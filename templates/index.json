@@ -115,71 +115,12 @@
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<style>\n  .logo-marquee {\n    overflow: hidden;\n    background-color: #F6F4F1;\n    padding: 30px 0;\n  }\n\n  .logo-track {\n    display: flex;\n    width: max-content;\n    animation: scroll-logos 25s linear infinite;\n  }\n\n  .logo-item {\n    flex: 0 0 auto;\n    margin: 0 40px;\n    display: flex;\n    align-items: center;\n  }\n\n  .logo-item img {\n    max-height: 50px;\n    width: auto;\n    opacity: 0.7;\n    transition: opacity 0.3s ease;\n  }\n\n  .logo-item img:hover {\n    opacity: 1;\n  }\n\n  @keyframes scroll-logos {\n    0% {\n      transform: translateX(0);\n    }\n    100% {\n      transform: translateX(-50%);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .logo-item {\n      margin: 0 25px;\n    }\n\n    .logo-item img {\n      max-height: 40px;\n    }\n  }\n</style>\n\n<div class=\"logo-marquee\">\n  <div class=\"logo-track\">\n    {% for i in (1..2) %}\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0000/0000/files/logo1.png\" alt=\"Logo\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0000/0000/files/logo2.png\" alt=\"Logo\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0000/0000/files/logo3.png\" alt=\"Logo\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0000/0000/files/logo4.png\" alt=\"Logo\">\n      </div>\n    {% endfor %}\n  </div>\n</div>",
-        "background": "#f2f2f2",
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<style>\n  .logo-marquee {\n    overflow: hidden;\n    background-color: #FFFFFF;\n    padding: 30px 0;\n  }\n\n  .logo-track {\n    display: flex;\n    width: max-content;\n    animation: scroll-logos 45s linear infinite;\n  }\n\n  .logo-item {\n    flex: 0 0 auto;\n    margin: 0 50px;\n    display: flex;\n    align-items: center;\n  }\n\n  .logo-item img {\n    max-height: 45px;\n    width: auto;\n    opacity: 0.7;\n    transition: opacity 0.3s ease;\n  }\n\n  .logo-item img:hover {\n    opacity: 1;\n  }\n\n  @keyframes scroll-logos {\n    0% {\n      transform: translateX(0);\n    }\n    100% {\n      transform: translateX(-50%);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .logo-item {\n      margin: 0 30px;\n    }\n\n    .logo-item img {\n      max-height: 38px;\n    }\n  }\n</style>\n\n<div class=\"logo-marquee\">\n  <div class=\"logo-track\">\n    {% for i in (1..2) %}\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo1_png.png?v=1767672602\" alt=\"Logo partenaire 1\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo2_png.png?v=1767672602\" alt=\"Logo partenaire 2\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo3_png.png?v=1767672602\" alt=\"Logo partenaire 3\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo4_png.png?v=1767672602\" alt=\"Logo partenaire 4\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo5_png.png?v=1767673132\" alt=\"Logo partenaire 5\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo6_png.png?v=1767673133\" alt=\"Logo partenaire 6\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo7_png.png?v=1767673132\" alt=\"Logo partenaire 7\">\n      </div>\n    {% endfor %}\n  </div>\n</div>",
+        "background": "#d5bfa0",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "logo_list_JyMkBM": {
-      "type": "logo-list",
-      "blocks": {
-        "logo_aRJyqY": {
-          "type": "logo",
-          "name": "Logo1",
-          "settings": {
-            "logo": "shopify://shop_images/Press_1_300x300_small_30d7c7ac-2b92-400e-997a-c0bb459d5da7.png",
-            "logo_width": 180,
-            "link": ""
-          }
-        },
-        "logo_yjEa4a": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Press_4_300x300_small_8897491d-7629-4aab-81f7-3a0a9a3d62e0.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_YAXD6r": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Press_3_300x300_small_19546ea1-ac46-4cf6-aef0-8b6d9a1f8aed.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_8WfW97": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/Press_2_300x300_small_db32e84c-3204-4aa0-8a18-35c2e163ca68.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_aRJyqY",
-        "logo_yjEa4a",
-        "logo_YAXD6r",
-        "logo_8WfW97"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "title": "Validé par :",
-        "content": "",
-        "text_alignment": "center",
-        "items_per_row": 5,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
       }
     },
     "multi_column_AHq3tY": {
@@ -304,28 +245,21 @@
     "image_with_text_overlay_KUrKhE": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "subheading_RL7fVM": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "heading_mE96yN": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
-            "heading_tag": "h1"
+            "text": "La maîtrise au service du confort.",
+            "heading_tag": "h2"
           }
         },
         "richtext_gBtA3g": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<h6>La compression 3D épouse le corps avec précision, redessine la silhouette et offre un maintien subtil qui renforce la confiance, naturellement.</h6>"
           }
         }
       },
       "block_order": [
-        "subheading_RL7fVM",
         "heading_mE96yN",
         "richtext_gBtA3g"
       ],
@@ -335,6 +269,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
+        "image": "shopify://shop_images/Gemini_Generated_Image_yvu5zeyvu5zeyvu5.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -342,19 +277,81 @@
         "overlay_opacity": 30
       }
     },
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
+    "images_with_text_scrolling_VMCyeh": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_NBYpe4": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/04_720x_36fc52db-0394-4e34-b4f0-06e548cd1e55.jpg",
+            "icon": "none",
+            "icon_width": 24,
+            "title": "The only clinically tested leggings that work on the REAL cause of cellulite.",
+            "content": "<p>How it actually works:</p><ul><li>Its <strong>patented 3D technology</strong> increases blood flow by 30% in critical areas, helping to smooth and tone the skin.</li></ul><p></p><ul><li><strong>Scientifically proven results</strong> : Clinical tests in Italy have shown a visible reduction in cellulite in just <strong>30 days</strong> *.</li></ul><p></p><ul><li><strong>3 benefits in 1</strong> : Reduces cellulite, lifts the buttocks and flattens the stomach — without the need for expensive creams or treatments.</li></ul>"
+          }
+        },
+        "item_pdHUTY": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/20251031-173746_720x_be53dce6-139e-415e-8190-0e286c1e82cd.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "item_MjX8Pz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/010_720x_5735a925-36c0-49b8-a3a7-5b40419de546.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "item_ngb6rB": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/01_720x_7f1e8a69-c9f0-471e-bc4e-f475f4d77344.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_NBYpe4",
+        "item_pdHUTY",
+        "item_MjX8Pz",
+        "item_ngb6rB"
+      ],
+      "name": "Images and text scrolling",
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": true,
+        "show_counter": false,
+        "desktop_image_effect": "fade",
+        "image_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "custom_liquid_WKXmrB": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
       "settings": {
         "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/20251104-173552_1.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "faq": {
@@ -445,11 +442,11 @@
   "order": [
     "featured_product_JFCyXQ",
     "custom_liquid_F3qrFp",
-    "logo_list_JyMkBM",
     "multi_column_AHq3tY",
     "17495927165ed14ddb",
     "image_with_text_overlay_KUrKhE",
-    "image-with-text-overlay",
+    "images_with_text_scrolling_VMCyeh",
+    "custom_liquid_WKXmrB",
     "faq"
   ]
 }
