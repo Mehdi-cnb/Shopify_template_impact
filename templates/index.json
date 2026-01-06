@@ -9,34 +9,123 @@
  */
 {
   "sections": {
-    "slideshow": {
-      "type": "slideshow",
+    "featured_product_JFCyXQ": {
+      "type": "featured-product",
       "blocks": {
-        "slide-1": {
-          "type": "image",
+        "vendor_4HGLj8": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_TWMbF8": {
+          "type": "title",
           "settings": {
-            "image": "shopify://shop_images/Photo_boutique_vLARGE.png",
-            "content_max_width": 720,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "Jeunesse et éclat naturels",
-            "heading_tag": "h4",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 15,
-            "background": "",
-            "background_gradient": ""
+            "heading_tag": "h5"
           }
+        },
+        "badges_kzLdQD": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_P8kkHU": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_mCcFP8": {
+          "type": "rating",
+          "settings": {
+            "show_empty": true
+          }
+        },
+        "separator_Gr93P8": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_nmCeRH": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_QDgFKx": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_6ThRc4": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_b9xUHC": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_CNjjKX": {
+          "type": "pickup_availability",
+          "settings": {}
         }
       },
       "block_order": [
-        "slide-1"
+        "vendor_4HGLj8",
+        "title_TWMbF8",
+        "badges_kzLdQD",
+        "price_P8kkHU",
+        "rating_mCcFP8",
+        "separator_Gr93P8",
+        "description_nmCeRH",
+        "variant_picker_QDgFKx",
+        "quantity_selector_6ThRc4",
+        "buy_buttons_b9xUHC",
+        "pickup_availability_CNjjKX"
       ],
+      "name": "Featured product",
+      "settings": {
+        "full_width": true,
+        "product": "leggings-3d-sylea-redefine-your-shape",
+        "desktop_media_width": 50,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
       "settings": {
         "full_width": true,
         "allow_transparent_header": true,
@@ -55,7 +144,6 @@
         "logo_aRJyqY": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/Vogue-Logo.png",
             "logo_width": 120,
             "link": ""
           }
@@ -63,7 +151,6 @@
         "logo_yjEa4a": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/Allure_logo_svg.png",
             "logo_width": 120,
             "link": ""
           }
@@ -71,7 +158,6 @@
         "logo_YAXD6r": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/Marie_Claire_Magazine_logo_svg.png",
             "logo_width": 120,
             "link": ""
           }
@@ -79,7 +165,6 @@
         "logo_8WfW97": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/Cosmopolitan-Logo.png",
             "logo_width": 120,
             "link": ""
           }
@@ -105,21 +190,6 @@
         "heading_gradient": "",
         "logo_item_background": "",
         "logo_item_border": ""
-      }
-    },
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/Images_benefices.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
       }
     },
     "multi_column_AHq3tY": {
@@ -687,9 +757,10 @@
     }
   },
   "order": [
+    "featured_product_JFCyXQ",
+    "image-with-text-overlay",
     "slideshow",
     "logo_list_JyMkBM",
-    "image-with-text-overlay",
     "multi_column_AHq3tY",
     "featured-product",
     "accordion_content_FJ7UpW",
