@@ -47,7 +47,6 @@
     {%- render 'product-info', product: product, update_url: true -%}
   </div>
 </div>
-  {% render 'driftmats-bundle', product: product %}
 {%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
 
 {%- if section.settings.show_fixed_add_to_cart and product.available and buy_buttons_block != blank -%}
@@ -68,7 +67,7 @@
           {{- image | image_url: width: image.width | image_tag: loading: 'lazy', sizes: '80px', widths: '80,160', class: 'rounded-xs' -}}
         </variant-media>
       {%- endif -%}
-
+  {% render 'driftmats-bundle', product: product %}
       <div class="v-stack gap-0.5">
         {%- assign vendor_block = section.blocks | where: 'type', 'vendor' -%}
 
