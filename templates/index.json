@@ -98,7 +98,7 @@
         "desktop_media_width": 50,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
+        "mobile_carousel_control": "thumbnails",
         "enable_video_autoplay": true,
         "enable_video_looping": false,
         "enable_image_zoom": true,
@@ -110,32 +110,17 @@
         "input_text_color": ""
       }
     },
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
+    "custom_liquid_F3qrFp": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
       "settings": {
         "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
-    "slideshow": {
-      "type": "slideshow",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": true,
-        "image_size": "auto",
-        "controls_type": "numbers",
-        "transition_type": "fade_with_text",
-        "autoplay": true,
-        "cycle_speed": 6,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n  .logo-marquee {\n    overflow: hidden;\n    background-color: #F6F4F1;\n    padding: 30px 0;\n  }\n\n  .logo-track {\n    display: flex;\n    width: max-content;\n    animation: scroll-logos 25s linear infinite;\n  }\n\n  .logo-item {\n    flex: 0 0 auto;\n    margin: 0 40px;\n    display: flex;\n    align-items: center;\n  }\n\n  .logo-item img {\n    max-height: 50px;\n    width: auto;\n    opacity: 0.7;\n    transition: opacity 0.3s ease;\n  }\n\n  .logo-item img:hover {\n    opacity: 1;\n  }\n\n  @keyframes scroll-logos {\n    0% {\n      transform: translateX(0);\n    }\n    100% {\n      transform: translateX(-50%);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .logo-item {\n      margin: 0 25px;\n    }\n\n    .logo-item img {\n      max-height: 40px;\n    }\n  }\n</style>\n\n<div class=\"logo-marquee\">\n  <div class=\"logo-track\">\n    {% for i in (1..2) %}\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0000/0000/files/logo1.png\" alt=\"Logo\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0000/0000/files/logo2.png\" alt=\"Logo\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0000/0000/files/logo3.png\" alt=\"Logo\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0000/0000/files/logo4.png\" alt=\"Logo\">\n      </div>\n    {% endfor %}\n  </div>\n</div>",
         "background": "#f2f2f2",
-        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "logo_list_JyMkBM": {
@@ -143,14 +128,17 @@
       "blocks": {
         "logo_aRJyqY": {
           "type": "logo",
+          "name": "Logo1",
           "settings": {
-            "logo_width": 120,
+            "logo": "shopify://shop_images/Press_1_300x300_small_30d7c7ac-2b92-400e-997a-c0bb459d5da7.png",
+            "logo_width": 180,
             "link": ""
           }
         },
         "logo_yjEa4a": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/Press_4_300x300_small_8897491d-7629-4aab-81f7-3a0a9a3d62e0.png",
             "logo_width": 120,
             "link": ""
           }
@@ -158,6 +146,7 @@
         "logo_YAXD6r": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/Press_3_300x300_small_19546ea1-ac46-4cf6-aef0-8b6d9a1f8aed.png",
             "logo_width": 120,
             "link": ""
           }
@@ -165,6 +154,7 @@
         "logo_8WfW97": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/Press_2_300x300_small_db32e84c-3204-4aa0-8a18-35c2e163ca68.png",
             "logo_width": 120,
             "link": ""
           }
@@ -195,37 +185,27 @@
     "multi_column_AHq3tY": {
       "type": "multi-column",
       "blocks": {
-        "item_RxaRgz": {
+        "item_nVXQeU": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/3yiRxtrN8z_4.jpg",
             "column_size": "3",
-            "title": "Maxime L.",
+            "title": "Veronique D.",
             "heading_tag": "h4",
-            "content": "<p>★★★★★</p><p>Je suis choqué du résultat, c'est un ami qui m'a recommandé le produit et le résultat est juste incroyable ! Je n'ai jamais pensé que je pouvais mieux entendre en me nettoyant les oreilles.</p>",
+            "content": "<p>★★★★★</p><p>J’ai surtout été surprise par le confort. Il maintient vraiment sans serrer, et la silhouette est plus nette, surtout au niveau des cuisses. Je me sens plus à l’aise dans mes vêtements.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
           }
         },
-        "item_LWanC3": {
+        "item_VMbTkU": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/KSQXFmESn4.jpg",
             "column_size": "3",
-            "title": "Léana C.",
+            "title": "Marie R.",
             "heading_tag": "h4",
-            "content": "<p>★★★★★</p><p>La commande est arrivée rapidement et en bon état. Le produit fonctionne parfaitement, il est très facile à utiliser et se connecte facilement au téléphone.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_d9hDdw": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Virginie A.",
-            "heading_tag": "h4",
-            "content": "<p>★★★★★</p><p>Très bon outil avec cette LED et cette caméra, j'ai pensé que je n'avais pas de cire mais ce que j'ai trouvé m'a surpris.</p>",
+            "content": "<p>★★★★★</p><p>Dès le premier port, j’ai vu la différence sur la ligne de mes jambes. C’est subtil mais réel. Et surtout, je peux le garder toute la journée sans inconfort.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -234,22 +214,50 @@
         "item_JncdGN": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/gempages_559621678087275640-24eddee2-1af9-4d36-88a4-d3edb3ecac38.jpg",
             "column_size": "3",
-            "title": "Anastazija R.",
+            "title": "Émilie B.",
             "heading_tag": "h4",
-            "content": "<p>★★★★★</p><p>J'apprécie le délai de livraison rapide et la facilité d'utilisation ! Je pensais que ce serait un peu plus compliqué que ça, mais je suis contente que ce soit vraiment aussi simple !</p>",
+            "content": "<p>★★★★★</p><p>Très élégant, je recommande.<br/>J’aime le rendu également sous des vêtements au quotidien. Il affine visuellement sans donner l’impression de porter un legging. <br/><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
           }
         },
-        "item_nVXQeU": {
+        "item_d9hDdw": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/Avis_Home_Page_3.jpg",
             "column_size": "3",
-            "title": "Clément D.",
+            "title": "Virginie A.",
             "heading_tag": "h4",
-            "content": "<p>★★★★★</p><p>Je suis souvent sceptique à l'égard de ce genre de produits car ils ont tendance à être assez mauvais, mais celui-ci était vraiment efficace ! </p>",
+            "content": "<p>★★★★★</p><p>L’aspect de ma peau est clairement plus lisse quand je le porte. Je le mets aussi bien pour travailler que pour marcher longtemps. Je valide !</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_RxaRgz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/gempages_559621678087275640-8670f129-8770-4b7f-8a34-5ba056797dc7.jpg",
+            "column_size": "3",
+            "title": "Loriane L.",
+            "heading_tag": "h4",
+            "content": "<p>★★★★★</p><p>Choquée du résultat, c'est une amie qui m'a recommandée ce leggings et le résultat est juste incroyable ! Je n'ai jamais pensé que je pouvais mieux apprécier ma silhouette</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_LWanC3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Avis_Home_Page_7.jpg",
+            "column_size": "3",
+            "title": "Léana C.",
+            "heading_tag": "h4",
+            "content": "<p>★★★★★</p><p>J’ai testé beaucoup de leggings gainants, souvent trop compressifs. Celui-ci est différent : il galbe bien les fesses et ne roule pas à la taille</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -257,11 +265,12 @@
         }
       },
       "block_order": [
-        "item_RxaRgz",
-        "item_LWanC3",
-        "item_d9hDdw",
+        "item_nVXQeU",
+        "item_VMbTkU",
         "item_JncdGN",
-        "item_nVXQeU"
+        "item_d9hDdw",
+        "item_RxaRgz",
+        "item_LWanC3"
       ],
       "settings": {
         "full_width": true,
@@ -274,393 +283,6 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "featured-product": {
-      "type": "featured-product",
-      "blocks": {
-        "liquid_WgUa3L": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"display: flex; align-items: center; background-color: #FAFAFA; padding: 8px 8px; border-radius: 8px; font-family: 'Poppins', sans-serif; width: fit-content; margin: 10px 0; text-align: left;\">\n  <!-- Étoiles -->\n  <img src=\"https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg\" alt=\"5 étoiles\" style=\"width: 105px; margin-right: 8px;\">\n  <!-- Texte -->\n  <div style=\"color: #4A4A4A; font-size: 12px; text-align: left;\">\n    <span style=\"font-weight: 400;\">Noté</span> <span style=\"color: #000000; font-weight: 700;\">4,8</span> <span style=\"font-weight: 400;\">sur</span> <span style=\"color: #000000; font-weight: 700;\">plus de 10 000 avis</span>\n  </div>\n</div>"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h2"
-          }
-        },
-        "badges": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": true
-          }
-        },
-        "separator": {
-          "type": "separator",
-          "settings": {}
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false
-          }
-        },
-        "variant-picker": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_mode": "block",
-            "color_mode": "color",
-            "size_chart_page": ""
-          }
-        },
-        "quantity-selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "liquid_3Mjrkh": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<style>\n  .stock-container {\n    display: inline-flex;\n    align-items: center;\n    font-size: 10px;\n    color: #dc2626;\n    font-weight: bold;\n  }\n\n  .stock-circle {\n    width: 12px;\n    height: 12px;\n    border-radius: 50%;\n    margin-right: 8px;\n    background-color: red;\n    /* Ajout d'une lueur autour du cercle */\n    box-shadow: 0 0 6px rgba(242, 180, 0, 0.8);\n  }\n</style>\n\n<div class=\"stock-container\">\n  <span class=\"stock-circle\"></span>\n  <span>Stock limité : ajoutez vite ce produit avant qu’il ne soit épuisé.</span>\n</div>"
-          }
-        },
-        "buy_buttons_LWi9jj": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": false,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "#00a341",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        },
-        "liquid_JXnnVy": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"display: flex; align-items: center; gap: 50px; flex-wrap: wrap; padding: 10px 0;\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0932/7673/3770/files/Visa_Logo.png?v=1748203182\" alt=\"Visa\" width=\"50\" height=\"30\" style=\"object-fit: contain;\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0932/7673/3770/files/Mastercard-Logo-2016-2020.png?v=1748203182\" alt=\"Mastercard\" width=\"50\" height=\"30\" style=\"object-fit: contain;\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0932/7673/3770/files/Apple_Pay_logo_svg.webp?v=1748202787\" alt=\"Apple Pay\" width=\"50\" height=\"30\" style=\"object-fit: contain;\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0932/7673/3770/files/Paypal_2014_logo.png?v=1748203024\" alt=\"PayPal\" width=\"30\" height=\"20\" style=\"object-fit: contain;\">\n</div>"
-          }
-        }
-      },
-      "block_order": [
-        "liquid_WgUa3L",
-        "title",
-        "badges",
-        "price",
-        "separator",
-        "description",
-        "variant-picker",
-        "quantity-selector",
-        "liquid_3Mjrkh",
-        "buy_buttons_LWi9jj",
-        "liquid_JXnnVy"
-      ],
-      "settings": {
-        "full_width": true,
-        "product": "audipro-nettoyant-doreilles-avec-camera-hd-integree",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "contained",
-        "mobile_carousel_control": "floating_dots",
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
-      }
-    },
-    "accordion_content_FJ7UpW": {
-      "type": "accordion-content",
-      "blocks": {
-        "item_zmk89a": {
-          "type": "item",
-          "settings": {
-            "title": "UN NETTOYAGE SÛR, DOUX ET MAITRISÉ",
-            "content": "<p><strong>Embout souple</strong>, <strong>caméra HD</strong> et <strong>lumière LED</strong> pour un nettoyage contrôlé, en toute sécurité.</p><p>Permet de <strong>retirer le cérumen</strong>, pas de le repousser comme un coton-tige.</p><p>Inspiré du <strong>matériel médical</strong>, pour un confort auditif durable.</p>"
-          }
-        },
-        "item_F3ciT8": {
-          "type": "item",
-          "settings": {
-            "title": "COMPATIBLE AVEC VOTRE SMARTPHONE",
-            "content": "<p><strong>Livraison gratuite</strong> en France, rapide et suivie.</p><p><strong>Retour sous 60 jours</strong> : satisfait ou remboursé, sans conditions.</p><p>Un achat <strong>sans pression</strong>, pensé pour vous laisser le temps d’essayer.</p>"
-          }
-        },
-        "item_VWQKec": {
-          "type": "item",
-          "settings": {
-            "title": "COMMANDEZ EN TOUTE SÉRÉNITÉ",
-            "content": "<p>Fonctionne avec <strong>iOS et Android</strong> via une <strong>application gratuite</strong>.</p><p>Connexion <strong>Wi-Fi locale</strong> : pas besoin d’Internet ni de Bluetooth.</p><p><strong>Image en direct </strong>de l'intérieur de l'oreille dès la première utilisation</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_zmk89a",
-        "item_F3ciT8",
-        "item_VWQKec"
-      ],
-      "name": "Accordion content",
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "",
-        "content": "<p>  </p>",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
-      }
-    },
-    "image_with_text_overlay_HfqMXX": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_x98Fia": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
-        "heading_6xVjVF": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_HigwKL": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_x98Fia",
-        "heading_6xVjVF",
-        "richtext_HigwKL"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
-    "multi_column_enAe3h": {
-      "type": "multi-column",
-      "blocks": {
-        "item_9Epd8k": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Jerôme Buisson",
-            "heading_tag": "h4",
-            "content": "<p><em>\"Ce cure-oreille en silicone retire délicatement le cérumen sans l’enfoncer. Son embout souple et doux permet un nettoyage efficace et sans risque.\"</em></p><p>ORL - Hôpital de la Miséricorde - Ajaccio, France</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_t3jynb": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Shannon Klingman",
-            "heading_tag": "h4",
-            "content": "<p><em>\"Ce que j’apprécie avec le nettoyeur AudiPro, c’est son embout en silicone qui permet un nettoyage sûr et maîtrisé. Une solution simple, efficace et sans danger pour le conduit auditif.\"</em></p><p>ORL - Hôpital Princesse Royale - Haywards Heath, Royaume-Uni</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_dUHPkV": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Miguel Santos",
-            "heading_tag": "h4",
-            "content": "<p><em>\"Conçu pour les personnes sujettes aux bouchons de cérumen, cet appareil utilise un embout en silicone souple pour un retrait efficace, sans irritation ni risque pour le conduit auditif.\"</em></p><p>ORL - Hôpital Comarcal de Inca - Inca, Espagne</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_9Epd8k",
-        "item_t3jynb",
-        "item_dUHPkV"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "impact_text_hJm6HU": {
-      "type": "impact-text",
-      "blocks": {
-        "item_KPNymx": {
-          "type": "item",
-          "settings": {
-            "title": "95,5%",
-            "subheading": "Taux de satisfaction de nos clients !",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "item_KPNymx"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 0.7,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "#000000",
-        "heading_gradient": "linear-gradient(180deg, rgba(196, 102, 238, 1), rgba(26, 217, 241, 1) 100%)",
-        "text_color": "",
-        "button_background": "#f2f2f2",
-        "button_text_color": "#f2f2f2"
-      }
-    },
-    "media_with_text_PTfqg3": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_gL3jEY": {
-          "type": "image",
-          "settings": {
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "Oubliez les coton-tiges !",
-            "content": "<p>Les spécialistes le répètent : <strong>le coton-tige fait plus de mal que de bien</strong>. Pourquoi ? Parce qu’en l’introduisant dans votre conduit auditif, vous <strong>repoussez le cérumen</strong> au lieu de l’évacuer. Résultat : il s’accumule au fond de l’oreille, pouvant former un <strong>bouchon</strong>.</p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#ffffff",
-            "background_gradient": "",
-            "text_color": "#000000",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_gL3jEY"
-      ],
-      "settings": {
-        "full_width": false,
-        "spacing": "small"
-      }
-    },
-    "media_with_text_8HfWV6": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_PxcnJf": {
-          "type": "image",
-          "settings": {
-            "media_width": 50,
-            "media_position": "end",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "Donnez à vos oreilles le nettoyage qu'elles méritent !",
-            "content": "<p>Recommandé par des médecins ORL, AudiPro vous permet de <strong>visualiser en temps réel l’intérieur de votre conduit auditif</strong> et de retirer en toute sécurité l’excès de cérumen, sans risque de blessure. Grâce à son <strong>embout ergonomique</strong> en forme de cuillère et à sa <strong>lumière LED</strong>, chaque geste est maîtrisé, <strong>doux et efficace</strong>.</p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#ffffff",
-            "background_gradient": "",
-            "text_color": "#000000",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_PxcnJf"
-      ],
-      "settings": {
-        "full_width": false,
-        "spacing": "small"
-      }
-    },
-    "media_with_text_CtNJWp": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_9fheC3": {
-          "type": "image",
-          "settings": {
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "AudiPro, votre nettoyant d'oreilles efficace et simple à utiliser",
-            "content": "<p><strong>Il suffit de connecter votre téléphone au Wi-Fi, d’installer l’application dédiée, et votre produit est prêt à être utilisé. Rien de plus simple, non ?</strong> En quelques secondes, vous accédez à une vue en temps réel de l’intérieur de votre oreille, pour un nettoyage précis, doux et sans risque.</p><p><br/>👉 <strong>Commandez maintenant et découvrez la différence dès la première utilisation.</strong></p>",
-            "link_text": "",
-            "link_url": "",
-            "background": "#ffffff",
-            "background_gradient": "",
-            "text_color": "#000000",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_9fheC3"
-      ],
-      "settings": {
-        "full_width": false,
-        "spacing": "small"
       }
     },
     "17495927165ed14ddb": {
@@ -679,49 +301,112 @@
         "review_button_text_color": "#ffffff"
       }
     },
+    "image_with_text_overlay_KUrKhE": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_RL7fVM": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_mE96yN": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_gBtA3g": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_RL7fVM",
+        "heading_mE96yN",
+        "richtext_gBtA3g"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/20251104-173552_1.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
         "166442457738b23caf-0": {
           "type": "item",
           "settings": {
-            "title": "Comment utiliser AudiPro ?",
-            "content": "<p>AudiPro est conçu pour être simple et intuitif. Il vous suffit de le connecter à votre smartphone via l’application dédiée, d’allumer la caméra, puis de suivre en temps réel les images diffusées à l’écran. Une lumière LED intégrée permet une visibilité optimale. En quelques minutes, vous pouvez nettoyer vos oreilles de manière précise et sécurisée. Un guide d’utilisation illustré est fourni, et notre service client est disponible pour vous accompagner si besoin.</p>"
+            "title": "Comment la compression 3D peut-elle m'aider à perdre du poid",
+            "content": "<p>La compression 3D de nos leggings crée une résistance naturelle pour vos muscles, les obligeant à travailler 2 à 3 fois plus que d'habitude.<br/><br/>Lorsque vos muscles travaillent davantage, ils brûlent plus de calories, ce qui vous aide à perdre du poids jusqu'à deux fois plus vite.<br/></p>"
           }
         },
         "166442457738b23caf-1": {
           "type": "item",
           "settings": {
-            "title": "Est-ce que le produit est risqué pour les oreilles ?",
-            "content": "<p>Chez AudiPro, la sécurité passe avant tout. C’est pourquoi notre appareil est <strong>recommandé par des professionnels de santé</strong> pour un usage domestique, en complément d’une bonne hygiène auriculaire. Il est équipé d’embouts souples en silicone médical, conçus pour respecter la sensibilité du conduit auditif, et permet un nettoyage <strong>visuel, précis et non invasif</strong> grâce à sa caméra HD. Contrairement aux coton-tiges, qui peuvent tasser le cérumen, cet appareil permet une extraction contrôlée, réduisant les risques de blessures. Bien sûr, en cas de pathologie ORL connue, l’avis de votre médecin reste essentiel.</p>"
+            "title": "Comment les lignes de modelage 3D réduisent-elles la cellulite ?",
+            "content": "<p>Nos lignes sculptantes 3D sont stratégiquement placées pour compresser les cuisses et les fesses, augmentant ainsi la circulation sanguine de 30 %.<br/><br/>Une meilleure circulation favorise l'élimination des graisses et des toxines responsables de la cellulite, s'attaquant ainsi à la cause profonde du problème.<br/><br/>Associées à la compression 3D, elles tonifient vos jambes et leur donnent une apparence plus ferme.</p>"
           }
         },
         "166442457738b23caf-2": {
           "type": "item",
           "settings": {
-            "title": "Est-ce que le produit est vraiment efficace ?",
-            "content": "<p>Grâce à sa caméra haute définition et sa lumière LED intégrée, AudiPro permet un nettoyage précis, en temps réel. Les utilisateurs rapportent une sensation immédiate de propreté et apprécient de pouvoir visualiser le résultat. Il s’agit d’un outil bien plus performant que les méthodes classiques, car il allie technologie et ergonomie pour garantir une efficacité visible.</p>"
+            "title": "Les leggings Syléa sont ils transparents lorsqu'on fait des squats ?",
+            "content": "<p>Les leggings Syléa garantissent une opcité totale, même pendant les entraînements intensifs ou les séances d'étirements.<br/><br/></p>"
           }
         },
         "item_NnpQGX": {
           "type": "item",
           "settings": {
-            "title": "Est-ce que l'appareil fonctionne avec mon téléphone ?",
-            "content": "<p>Oui. Notre application est compatible avec <strong>tous les smartphones récents</strong>, qu’ils fonctionnent sous <strong>Android ou iOS (iPhone)</strong>. Il suffit de télécharger l’application via le Play Store ou l’App Store, de connecter l’appareil en Wi-Fi local, et vous pouvez l’utiliser immédiatement, sans configuration complexe. Une compatibilité universelle pour une utilisation sans souci.</p>"
+            "title": "Garantie satisfait ou remboursé de 30 jours",
+            "content": "<p>Nous offrons une garantie de satisfaction de 30 jours. </p><p>Si vous n'êtes pas entièrement satisfait(e), contactez-nous à Syleapro@gmail.com et nous vous rembourserons intégralement sous 6 à 15 jours ouvrables.<br/></p><p>Vous avez commandé la mauvaise taille ? Aucun souci ! Les échanges sont gratuits pour vous garantir un ajustement parfait.<br/><br/><br/><br/></p>"
           }
         },
         "item_cbUdPp": {
           "type": "item",
           "settings": {
-            "title": "Est ce que le produit est garanti ?",
-            "content": "<p>Oui, vous bénéficiez d’une <strong>garantie 100 % satisfait ou remboursé pendant 90 jours</strong>. Essayez l’appareil chez vous, et si vous n’êtes pas entièrement convaincu, nous vous remboursons sans discussion. De plus, il est couvert par une <strong>garantie constructeur de 12 mois</strong> en cas de défaut.</p>"
+            "title": "Livraison gratuite en 5 à 15 jours",
+            "content": "<p>Toutes les commandes bénéficient de la livraison gratuite. Délai de livraison estimé : 5 à 15 jours ouvrables.</p>"
           }
         },
         "item_mByjy8": {
           "type": "item",
           "settings": {
-            "title": "Quels sont les délais de livraison ?",
-            "content": "<p>Nous proposons une livraison rapide et suivie. Les délais moyens sont de <strong>5 à 10 jours ouvrés</strong>, selon votre lieu de résidence.</p>"
+            "title": "Puis-je utiliser le leggings Lynéa 3D pendant ma grossesse ?",
+            "content": "<p>Oui, absolument. Cet appareil est conçu pour vous aider à sculpter votre silhouette sans effets secondaires ni effort.<br/>Il est parfaitement adapté en cas de grossesse, d'allaitement, de varices, etc.</p>"
+          }
+        },
+        "item_JiWiTr": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je porter des leggings 3D à la salle de sport ?",
+            "content": "<p>Oui, absolument ! Nos leggings sont conçus pour être portés partout : au travail, à la maison, mais aussi à la salle de sport ou pour un jogging.</p>"
           }
         }
       },
@@ -731,7 +416,8 @@
         "166442457738b23caf-2",
         "item_NnpQGX",
         "item_cbUdPp",
-        "item_mByjy8"
+        "item_mByjy8",
+        "item_JiWiTr"
       ],
       "settings": {
         "full_width": false,
@@ -758,19 +444,12 @@
   },
   "order": [
     "featured_product_JFCyXQ",
-    "image-with-text-overlay",
-    "slideshow",
+    "custom_liquid_F3qrFp",
     "logo_list_JyMkBM",
     "multi_column_AHq3tY",
-    "featured-product",
-    "accordion_content_FJ7UpW",
-    "image_with_text_overlay_HfqMXX",
-    "multi_column_enAe3h",
-    "impact_text_hJm6HU",
-    "media_with_text_PTfqg3",
-    "media_with_text_8HfWV6",
-    "media_with_text_CtNJWp",
     "17495927165ed14ddb",
+    "image_with_text_overlay_KUrKhE",
+    "image-with-text-overlay",
     "faq"
   ]
 }
