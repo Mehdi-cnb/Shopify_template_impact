@@ -48,6 +48,10 @@
             "collapse_content": false
           }
         },
+        "sku_hmebBh": {
+          "type": "sku",
+          "settings": {}
+        },
         "variant_picker_QDgFKx": {
           "type": "variant_picker",
           "settings": {
@@ -86,6 +90,7 @@
         "rating_mCcFP8",
         "separator_Gr93P8",
         "description_nmCeRH",
+        "sku_hmebBh",
         "variant_picker_QDgFKx",
         "quantity_selector_6ThRc4",
         "buy_buttons_b9xUHC",
@@ -103,29 +108,29 @@
         "enable_video_looping": false,
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
-        "background": "",
+        "background": "#f0f0f0",
         "background_gradient": "",
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
     },
-    "custom_liquid_F3qrFp": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": true,
-        "liquid": "<style>\n  .logo-marquee {\n    overflow: hidden;\n    background-color: #FFFFFF;\n    padding: 30px 0;\n  }\n\n  .logo-track {\n    display: flex;\n    width: max-content;\n    animation: scroll-logos 45s linear infinite;\n  }\n\n  .logo-item {\n    flex: 0 0 auto;\n    margin: 0 50px;\n    display: flex;\n    align-items: center;\n  }\n\n  .logo-item img {\n    max-height: 45px;\n    width: auto;\n    opacity: 0.7;\n    transition: opacity 0.3s ease;\n  }\n\n  .logo-item img:hover {\n    opacity: 1;\n  }\n\n  @keyframes scroll-logos {\n    0% {\n      transform: translateX(0);\n    }\n    100% {\n      transform: translateX(-50%);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .logo-item {\n      margin: 0 30px;\n    }\n\n    .logo-item img {\n      max-height: 38px;\n    }\n  }\n</style>\n\n<div class=\"logo-marquee\">\n  <div class=\"logo-track\">\n    {% for i in (1..2) %}\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo1_png.png?v=1767672602\" alt=\"Logo partenaire 1\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo2_png.png?v=1767672602\" alt=\"Logo partenaire 2\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo3_png.png?v=1767672602\" alt=\"Logo partenaire 3\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo4_png.png?v=1767672602\" alt=\"Logo partenaire 4\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo5_png.png?v=1767673132\" alt=\"Logo partenaire 5\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo6_png.png?v=1767673133\" alt=\"Logo partenaire 6\">\n      </div>\n      <div class=\"logo-item\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0978/6215/6631/files/logo7_png.png?v=1767673132\" alt=\"Logo partenaire 7\">\n      </div>\n    {% endfor %}\n  </div>\n</div>",
-        "background": "#d5bfa0",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "multi_column_AHq3tY": {
       "type": "multi-column",
       "blocks": {
+        "item_JncdGN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/gempages_559621678087275640-24eddee2-1af9-4d36-88a4-d3edb3ecac38.jpg",
+            "column_size": "3",
+            "title": "Émilie B.",
+            "heading_tag": "h4",
+            "content": "<p>★★★★★</p><p>Très élégant, je recommande.<br/>J’aime le rendu également sous des vêtements au quotidien. Il affine visuellement sans donner l’impression de porter un legging. <br/><br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
         "item_nVXQeU": {
           "type": "item",
           "settings": {
@@ -147,19 +152,6 @@
             "title": "Marie R.",
             "heading_tag": "h4",
             "content": "<p>★★★★★</p><p>Dès le premier port, j’ai vu la différence sur la ligne de mes jambes. C’est subtil mais réel. Et surtout, je peux le garder toute la journée sans inconfort.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_JncdGN": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/gempages_559621678087275640-24eddee2-1af9-4d36-88a4-d3edb3ecac38.jpg",
-            "column_size": "3",
-            "title": "Émilie B.",
-            "heading_tag": "h4",
-            "content": "<p>★★★★★</p><p>Très élégant, je recommande.<br/>J’aime le rendu également sous des vêtements au quotidien. Il affine visuellement sans donner l’impression de porter un legging. <br/><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -206,9 +198,9 @@
         }
       },
       "block_order": [
+        "item_JncdGN",
         "item_nVXQeU",
         "item_VMbTkU",
-        "item_JncdGN",
         "item_d9hDdw",
         "item_RxaRgz",
         "item_LWanC3"
@@ -221,25 +213,9 @@
         "subheading": "",
         "title": "",
         "content": "",
-        "background": "",
+        "background": "#f0f0f0",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "17495927165ed14ddb": {
-      "type": "apps",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
-        "review_header_text_color": "#000000",
-        "review_button_background": "#000000",
-        "review_button_text_color": "#ffffff"
       }
     },
     "image_with_text_overlay_KUrKhE": {
@@ -249,13 +225,13 @@
           "type": "heading",
           "settings": {
             "text": "La maîtrise au service du confort.",
-            "heading_tag": "h2"
+            "heading_tag": "h4"
           }
         },
         "richtext_gBtA3g": {
           "type": "richtext",
           "settings": {
-            "content": "<h6>La compression 3D épouse le corps avec précision, redessine la silhouette et offre un maintien subtil qui renforce la confiance, naturellement.</h6>"
+            "content": "<p>La compression 3D épouse le corps avec précision, redessine la silhouette et offre un maintien subtil qui renforce la confiance, naturellement.</p>"
           }
         }
       },
@@ -280,78 +256,161 @@
     "images_with_text_scrolling_VMCyeh": {
       "type": "images-with-text-scrolling",
       "blocks": {
-        "item_NBYpe4": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/04_720x_36fc52db-0394-4e34-b4f0-06e548cd1e55.jpg",
-            "icon": "none",
-            "icon_width": 24,
-            "title": "The only clinically tested leggings that work on the REAL cause of cellulite.",
-            "content": "<p>How it actually works:</p><ul><li>Its <strong>patented 3D technology</strong> increases blood flow by 30% in critical areas, helping to smooth and tone the skin.</li></ul><p></p><ul><li><strong>Scientifically proven results</strong> : Clinical tests in Italy have shown a visible reduction in cellulite in just <strong>30 days</strong> *.</li></ul><p></p><ul><li><strong>3 benefits in 1</strong> : Reduces cellulite, lifts the buttocks and flattens the stomach — without the need for expensive creams or treatments.</li></ul>"
-          }
-        },
-        "item_pdHUTY": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/20251031-173746_720x_be53dce6-139e-415e-8190-0e286c1e82cd.jpg",
-            "icon": "none",
-            "icon_width": 48,
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        },
         "item_MjX8Pz": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/010_720x_5735a925-36c0-49b8-a3a7-5b40419de546.jpg",
+            "image": "shopify://shop_images/P3_3.gif",
             "icon": "none",
             "icon_width": 48,
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "item_ngb6rB": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/01_720x_7f1e8a69-c9f0-471e-bc4e-f475f4d77344.jpg",
-            "icon": "none",
-            "icon_width": 48,
-            "title": "Heading",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "title": "Comment ça marche ?",
+            "content": "<p>Notre technologie 3D stimule la circulation à chaque mouvement, aidant votre corps à réduire naturellement la cellulite.</p><p>Une compression douce et ciblée tonifie les jambes, sculpte la silhouette et améliore la texture de la peau.<br/><br/>Conçu dans un tissu ultra-doux, extensible et respirant pour un confort durable tout au long de la journée.</p>"
           }
         }
       },
       "block_order": [
-        "item_NBYpe4",
-        "item_pdHUTY",
-        "item_MjX8Pz",
-        "item_ngb6rB"
+        "item_MjX8Pz"
       ],
       "name": "Images and text scrolling",
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "stack_on_mobile": true,
         "show_counter": false,
-        "desktop_image_effect": "fade",
-        "image_position": "start",
-        "background": "",
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
+        "background": "#f9f9f9",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": ""
       }
     },
-    "custom_liquid_WKXmrB": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
+    "slideshow_UAAbiC": {
+      "type": "slideshow",
+      "blocks": {
+        "image_dEWK4Q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/04_720x_36fc52db-0394-4e34-b4f0-06e548cd1e55.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "Confort",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_Qxp8nK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20251031-173746_720x_be53dce6-139e-415e-8190-0e286c1e82cd.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "Soutien musculaire",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_A3TzBJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/010_720x_5735a925-36c0-49b8-a3a7-5b40419de546.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "Élégance",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_hBABYg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/01_720x_7f1e8a69-c9f0-471e-bc4e-f475f4d77344.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "Adaptabilité",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_gECMCy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/05_720x_97f74213-6bf8-407a-86e5-887fe462509d.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "Simplicité",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_dEWK4Q",
+        "image_Qxp8nK",
+        "image_A3TzBJ",
+        "image_hBABYg",
+        "image_gECMCy"
+      ],
+      "name": "Slideshow",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
       }
     },
     "faq": {
@@ -441,12 +500,10 @@
   },
   "order": [
     "featured_product_JFCyXQ",
-    "custom_liquid_F3qrFp",
     "multi_column_AHq3tY",
-    "17495927165ed14ddb",
     "image_with_text_overlay_KUrKhE",
     "images_with_text_scrolling_VMCyeh",
-    "custom_liquid_WKXmrB",
+    "slideshow_UAAbiC",
     "faq"
   ]
 }
