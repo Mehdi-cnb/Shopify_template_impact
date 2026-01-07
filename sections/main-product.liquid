@@ -67,7 +67,6 @@
           {{- image | image_url: width: image.width | image_tag: loading: 'lazy', sizes: '80px', widths: '80,160', class: 'rounded-xs' -}}
         </variant-media>
       {%- endif -%}
-  {% render 'driftmats-bundle', product: product %}
       <div class="v-stack gap-0.5">
         {%- assign vendor_block = section.blocks | where: 'type', 'vendor' -%}
 
@@ -1095,7 +1094,12 @@ quick buy information in a template, that will be extracted in JS, but ensure it
         }
       ]
     }
-  ],
+  ,
+{
+  "type": "kaching_bundle",
+  "name": "Kaching bundle"
+}
+],
   "settings": [
     {
       "type": "checkbox",
