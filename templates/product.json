@@ -68,8 +68,8 @@
             "size_chart_page": ""
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
+        "kaching_bundle_XtfhJ4": {
+          "type": "kaching_bundle",
           "settings": {}
         }
       },
@@ -84,7 +84,7 @@
         "separator",
         "description",
         "variant_picker",
-        "quantity_selector"
+        "kaching_bundle_XtfhJ4"
       ],
       "settings": {
         "full_width": true,
