@@ -15,11 +15,13 @@
 
     <div class="featured-kaching-content">
       <div class="featured-kaching-media">
-        <img
-          src="{{ selected_product.featured_image | image_url: width: 600 }}"
-          alt="{{ selected_product.title }}"
-          loading="lazy"
-        >
+<img
+  src="{{ selected_product.featured_image | image_url: width: 600 }}"
+  alt="{{ selected_product.title | escape }}"
+  width="{{ selected_product.featured_image.width }}"
+  height="{{ selected_product.featured_image.height }}"
+  loading="lazy"
+>
       </div>
 
       <div class="featured-kaching-info">
