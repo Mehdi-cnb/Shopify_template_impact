@@ -12,12 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "liquid_7jiJkL": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"display: flex; align-items: center; background-color: #FAFAFA; padding: 8px 8px; border-radius: 8px; font-family: 'Poppins', sans-serif; width: fit-content; margin: 10px 0; text-align: left;\">\n  <!-- Étoiles -->\n  <img src=\"https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg\" alt=\"5 étoiles\" style=\"width: 105px; margin-right: 8px;\">\n  <!-- Texte -->\n  <div style=\"color: #4A4A4A; font-size: 12px; text-align: left;\">\n    <span style=\"font-weight: 400;\">Noté</span> <span style=\"color: #000000; font-weight: 700;\">4,7</span> <span style=\"font-weight: 400;\">sur</span> <span style=\"color: #000000; font-weight: 700;\">plus de 7500 avis</span>\n  </div>\n</div>"
-          }
-        },
         "vendor": {
           "type": "vendor",
           "settings": {}
@@ -58,6 +52,12 @@
             "collapse_content": false
           }
         },
+        "liquid_7jiJkL": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"display: flex; align-items: center; background-color: #FAFAFA; padding: 8px 8px; border-radius: 8px; font-family: 'Poppins', sans-serif; width: fit-content; margin: 10px 0; text-align: left;\">\n  <!-- Étoiles -->\n  <img src=\"https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg\" alt=\"5 étoiles\" style=\"width: 105px; margin-right: 8px;\">\n  <!-- Texte -->\n  <div style=\"color: #4A4A4A; font-size: 12px; text-align: left;\">\n    <span style=\"font-weight: 400;\">Noté</span> <span style=\"color: #000000; font-weight: 700;\">4,7</span> <span style=\"font-weight: 400;\">sur</span> <span style=\"color: #000000; font-weight: 700;\">plus de 7500 avis</span>\n  </div>\n</div>"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -74,7 +74,6 @@
         }
       },
       "block_order": [
-        "liquid_7jiJkL",
         "vendor",
         "title",
         "badges",
@@ -83,6 +82,7 @@
         "payment_terms",
         "separator",
         "description",
+        "liquid_7jiJkL",
         "variant_picker",
         "kaching_bundle_XtfhJ4"
       ],
