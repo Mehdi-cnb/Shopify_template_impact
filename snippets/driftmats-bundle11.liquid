@@ -1,0 +1,169 @@
+{% comment %}
+  DriftMats Bundle Clone with variant selectors (color/size)
+{% endcomment %}
+
+{% liquid
+  assign product_price = product.price
+%}
+
+<div
+  class="driftmats-bundle-wrapper"
+  data-product-id="{{ product.id }}"
+  data-product-price="{{ product.price | times: 0.01 }}"
+>
+  <h3 class="bundle-title">BUNDLE & SAVE</h3>
+  
+  <div class="bundle-options">
+    
+    {% assign pack_options = "1,2,3" | split: "," %}
+    {% for pack in pack_options %}
+      {% assign quantity = pack | plus: 0 %}
+      {% assign discount = 0 %}
+      {% assign badge = "" %}
+      {% assign free_gift = "" %}
+      
+      {% if quantity == 2 %}
+        {% assign discount = 12 %}
+        {% assign badge = "MOST POPULAR" %}
+        {% assign free_gift = "+ FREE $5 Gift Card" %}
+      {% elsif quantity == 3 %}
+        {% assign discount = 18 %}
+        {% assign badge = "BEST VALUE" %}
+        {% assign free_gift = "+ FREE 10$ Gift Card" %}
+      {% endif %}
+
+      <div class="bundle-option {% if badge != "" %}{{ badge | downcase | replace: ' ', '-' }}{% endif %}" data-quantity="{{ quantity }}" data-discount="{{ discount }}">
+        {% if badge != "" %}
+          <div class="bundle-badge">{{ badge }}</div>
+        {% endif %}
+
+        <div class="bundle-option-content">
+          <div class="bundle-quantity">
+            <span class="quantity-number">{{ quantity }}</span>
+            <span class="quantity-text">pack</span>
+          </div>
+
+          <div class="bundle-details">
+            <div class="bundle-price">
+              {% assign total_price = product_price | times: quantity %}
+              {% if discount > 0 %}
+                {% assign discounted_price = total_price | times: 1.0 | times: 0.88 %}
+                <span class="original-price">${{ total_price | money_without_currency }}</span>
+                <span class="price">${{ discounted_price | money_without_currency }}</span>
+              {% else %}
+                <span class="price">${{ total_price | money_without_currency }}</span>
+              {% endif %}
+            </div>
+
+            {% if free_gift != "" %}
+              <div class="free-gift">
+                <span class="gift-text">{{ free_gift }}</span>
+              </div>
+            {% endif %}
+
+            <!-- Variant selector -->
+            <div class="bundle-variant-selector">
+              <label for="bundle-{{ pack }}-variant">Choose variant:</label>
+              <select id="bundle-{{ pack }}-variant" class="bundle-variant">
+                {% for variant in product.variants %}
+                  <option value="{{ variant.id }}">{{ variant.title }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <input type="radio" name="bundle-selection" value="{{ pack }}" class="bundle-radio" id="bundle-{{ pack }}"{% if quantity == 2 %} checked{% endif %}>
+      </div>
+    {% endfor %}
+
+  </div>
+
+  <!-- Add to Cart Button -->
+  <div class="bundle-cart-actions">
+    <button type="button" class="btn bundle-add-to-cart">
+      <span class="cart-text">Add to Cart</span>
+      <span class="cart-price" id="bundle-total-price">${{ product_price | times: 2 | times: 0.88 | money_without_currency }}</span>
+    </button>
+  </div>
+</div>
+
+<style>
+/* ... Garder ton CSS existant ... */
+
+/* Variant selector styling */
+.bundle-variant-selector {
+  margin-top: 8px;
+}
+.bundle-variant {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+</style>
+
+<script>
+(function() {
+  'use strict';
+
+  document.querySelectorAll('.driftmats-bundle-wrapper').forEach(bundleWrapper => {
+    const bundleOptions = bundleWrapper.querySelectorAll('.bundle-option');
+    const bundleRadios = bundleWrapper.querySelectorAll('.bundle-radio');
+    const addToCartBtn = bundleWrapper.querySelector('.bundle-add-to-cart');
+    const totalPriceSpan = bundleWrapper.querySelector('#bundle-total-price');
+    const productPrice = parseFloat(bundleWrapper.dataset.productPrice);
+
+    function updateTotalPrice() {
+      const selectedOption = bundleWrapper.querySelector('.bundle-option.selected');
+      if (!selectedOption) return;
+      const quantity = parseInt(selectedOption.dataset.quantity);
+      const discount = parseInt(selectedOption.dataset.discount);
+
+      let totalPrice = productPrice * quantity;
+      if (discount > 0) totalPrice *= (1 - discount / 100);
+      totalPriceSpan.textContent = '$' + totalPrice.toFixed(2);
+    }
+
+    bundleOptions.forEach((option, index) => {
+      option.addEventListener('click', () => {
+        bundleOptions.forEach(opt => opt.classList.remove('selected'));
+        option.classList.add('selected');
+        bundleRadios[index].checked = true;
+        updateTotalPrice();
+      });
+    });
+
+    addToCartBtn.addEventListener('click', () => {
+      const selectedOption = bundleWrapper.querySelector('.bundle-option.selected');
+      if (!selectedOption) return;
+
+      const quantity = parseInt(selectedOption.dataset.quantity);
+
+      // Récupérer la variante sélectionnée
+      const selectedVariant = selectedOption.querySelector('.bundle-variant');
+      const variantIdToAdd = selectedVariant ? selectedVariant.value : selectedOption.dataset.variantId;
+
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          items: [{
+            id: variantIdToAdd,
+            quantity: quantity
+          }]
+        })
+      })
+      .then(() => {
+        document.dispatchEvent(new CustomEvent('cart:updated'));
+      });
+    });
+
+    const defaultOption = bundleWrapper.querySelector('[data-quantity="2"]');
+    if (defaultOption) {
+      defaultOption.classList.add('selected');
+      updateTotalPrice();
+    }
+  });
+})();
+</script>
