@@ -9,39 +9,234 @@
  */
 {
   "sections": {
-    "image_with_text_overlay_KUrKhE": {
-      "type": "image-with-text-overlay",
+    "slideshow_UAAbiC": {
+      "type": "slideshow",
       "blocks": {
-        "heading_mE96yN": {
-          "type": "heading",
+        "image_dEWK4Q": {
+          "type": "image",
           "settings": {
-            "text": "La maîtrise au service du confort.",
-            "heading_tag": "h4"
+            "image": "shopify://shop_images/04_720x_36fc52db-0394-4e34-b4f0-06e548cd1e55.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "Confort",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
           }
         },
-        "richtext_gBtA3g": {
-          "type": "richtext",
+        "image_Qxp8nK": {
+          "type": "image",
           "settings": {
-            "content": "<p>La compression 3D épouse le corps avec précision, redessine la silhouette et offre un maintien subtil qui renforce la confiance, naturellement.</p>"
+            "image": "shopify://shop_images/20251031-173746_720x_be53dce6-139e-415e-8190-0e286c1e82cd.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "Soutien musculaire",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_A3TzBJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/010_720x_5735a925-36c0-49b8-a3a7-5b40419de546.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "Élégance",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_hBABYg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/01_720x_7f1e8a69-c9f0-471e-bc4e-f475f4d77344.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "Adaptabilité",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
+        "image_gECMCy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/05_720x_97f74213-6bf8-407a-86e5-887fe462509d.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "Simplicité",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
           }
         }
       },
       "block_order": [
-        "heading_mE96yN",
-        "richtext_gBtA3g"
+        "image_dEWK4Q",
+        "image_Qxp8nK",
+        "image_A3TzBJ",
+        "image_hBABYg",
+        "image_gECMCy"
       ],
-      "name": "Image with text overlay",
+      "name": "Slideshow",
       "settings": {
         "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
+        "allow_transparent_header": true,
         "image_size": "auto",
-        "image": "shopify://shop_images/Gemini_Generated_Image_yvu5zeyvu5zeyvu5.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "featured_product_JFCyXQ": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_4HGLj8": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_TWMbF8": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h5"
+          }
+        },
+        "badges_kzLdQD": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_P8kkHU": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_mCcFP8": {
+          "type": "rating",
+          "settings": {
+            "show_empty": true
+          }
+        },
+        "separator_Gr93P8": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_nmCeRH": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "sku_hmebBh": {
+          "type": "sku",
+          "settings": {}
+        },
+        "variant_picker_QDgFKx": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "pickup_availability_CNjjKX": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "buy_buttons_JPnUpQ": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor_4HGLj8",
+        "title_TWMbF8",
+        "badges_kzLdQD",
+        "price_P8kkHU",
+        "rating_mCcFP8",
+        "separator_Gr93P8",
+        "description_nmCeRH",
+        "sku_hmebBh",
+        "variant_picker_QDgFKx",
+        "pickup_availability_CNjjKX",
+        "buy_buttons_JPnUpQ"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "full_width": true,
+        "product": "leggings-3d-sylea-redefine-your-shape",
+        "desktop_media_width": 50,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#f0f0f0",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
       }
     },
     "multi_column_AHq3tY": {
@@ -178,230 +373,39 @@
         "heading_gradient": ""
       }
     },
-    "featured_product_JFCyXQ": {
-      "type": "featured-product",
+    "image_with_text_overlay_KUrKhE": {
+      "type": "image-with-text-overlay",
       "blocks": {
-        "kaching_bundles_app_block_XtdWFn": {
-          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+        "heading_mE96yN": {
+          "type": "heading",
           "settings": {
-            "product": "{{section.settings.product}}",
-            "manual_deal_block_id": ""
+            "text": "La maîtrise au service du confort.",
+            "heading_tag": "h4"
           }
         },
-        "vendor_4HGLj8": {
-          "type": "vendor",
-          "settings": {}
-        },
-        "title_TWMbF8": {
-          "type": "title",
+        "richtext_gBtA3g": {
+          "type": "richtext",
           "settings": {
-            "heading_tag": "h5"
-          }
-        },
-        "badges_kzLdQD": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price_P8kkHU": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "rating_mCcFP8": {
-          "type": "rating",
-          "settings": {
-            "show_empty": true
-          }
-        },
-        "separator_Gr93P8": {
-          "type": "separator",
-          "settings": {}
-        },
-        "description_nmCeRH": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false
-          }
-        },
-        "sku_hmebBh": {
-          "type": "sku",
-          "settings": {}
-        },
-        "variant_picker_QDgFKx": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_mode": "block",
-            "color_mode": "color",
-            "size_chart_page": ""
-          }
-        },
-        "pickup_availability_CNjjKX": {
-          "type": "pickup_availability",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "kaching_bundles_app_block_XtdWFn",
-        "vendor_4HGLj8",
-        "title_TWMbF8",
-        "badges_kzLdQD",
-        "price_P8kkHU",
-        "rating_mCcFP8",
-        "separator_Gr93P8",
-        "description_nmCeRH",
-        "sku_hmebBh",
-        "variant_picker_QDgFKx",
-        "pickup_availability_CNjjKX"
-      ],
-      "name": "Featured product",
-      "settings": {
-        "full_width": true,
-        "product": "leggings-3d-sylea-redefine-your-shape",
-        "desktop_media_width": 50,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "thumbnails",
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "#f0f0f0",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
-      }
-    },
-    "slideshow_UAAbiC": {
-      "type": "slideshow",
-      "blocks": {
-        "image_dEWK4Q": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/04_720x_36fc52db-0394-4e34-b4f0-06e548cd1e55.jpg",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "Confort",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "image_Qxp8nK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/20251031-173746_720x_be53dce6-139e-415e-8190-0e286c1e82cd.jpg",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "Soutien musculaire",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "image_A3TzBJ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/010_720x_5735a925-36c0-49b8-a3a7-5b40419de546.jpg",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "Élégance",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "image_hBABYg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/01_720x_7f1e8a69-c9f0-471e-bc4e-f475f4d77344.jpg",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "Adaptabilité",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "image_gECMCy": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/05_720x_97f74213-6bf8-407a-86e5-887fe462509d.jpg",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "Simplicité",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
+            "content": "<p>La compression 3D épouse le corps avec précision, redessine la silhouette et offre un maintien subtil qui renforce la confiance, naturellement.</p>"
           }
         }
       },
       "block_order": [
-        "image_dEWK4Q",
-        "image_Qxp8nK",
-        "image_A3TzBJ",
-        "image_hBABYg",
-        "image_gECMCy"
+        "heading_mE96yN",
+        "richtext_gBtA3g"
       ],
-      "name": "Slideshow",
+      "name": "Image with text overlay",
       "settings": {
         "full_width": true,
-        "allow_transparent_header": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
         "image_size": "auto",
-        "controls_type": "dots",
-        "transition_type": "fade_with_text",
-        "autoplay": false,
-        "cycle_speed": 6,
-        "background": "#f2f2f2",
-        "background_gradient": ""
+        "image": "shopify://shop_images/Gemini_Generated_Image_yvu5zeyvu5zeyvu5.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "faq": {
