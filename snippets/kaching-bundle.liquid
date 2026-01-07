@@ -14,8 +14,12 @@
   assign product_id = product.id
   assign variant_id = product.selected_or_first_available_variant.id
 %}
-
-<div class="driftmats-bundle-wrapper" data-product-id="{{ product_id }}">
+<div
+  class="driftmats-bundle-wrapper"
+  data-product-id="{{ product.id }}"
+  data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+  data-product-price="{{ product.price | times: 0.01 }}"
+>
   <h3 class="bundle-title">BUNDLE & SAVE</h3>
   
   <div class="bundle-options">
@@ -292,106 +296,66 @@
 <script>
 (function() {
   'use strict';
-  
-  const bundleWrapper = document.querySelector('.driftmats-bundle-wrapper');
-  const bundleOptions = bundleWrapper.querySelectorAll('.bundle-option');
-  const bundleRadios = bundleWrapper.querySelectorAll('.bundle-radio');
-  const addToCartBtn = bundleWrapper.querySelector('.bundle-add-to-cart');
-  const totalPriceSpan = bundleWrapper.querySelector('#bundle-total-price');
-  
-  const productPrice = {{ product.price | times: 0.01 }};
-  const variantId = '{{ variant_id }}';
-  
-  // Handle bundle option selection
-  bundleOptions.forEach((option, index) => {
-    option.addEventListener('click', function() {
-      // Remove selected class from all options
-      bundleOptions.forEach(opt => opt.classList.remove('selected'));
-      
-      // Add selected class to clicked option
-      this.classList.add('selected');
-      
-      // Check the corresponding radio button
-      bundleRadios[index].checked = true;
-      
-      // Update total price
-      updateTotalPrice();
-    });
-  });
-  
-  // Handle radio button changes
-  bundleRadios.forEach(radio => {
-    radio.addEventListener('change', function() {
-      if (this.checked) {
-        // Remove selected class from all options
-        bundleOptions.forEach(opt => opt.classList.remove('selected'));
-        
-        // Add selected class to parent option
-        this.closest('.bundle-option').classList.add('selected');
-        
-        // Update total price
-        updateTotalPrice();
+
+  document.querySelectorAll('.driftmats-bundle-wrapper').forEach(bundleWrapper => {
+    const bundleOptions = bundleWrapper.querySelectorAll('.bundle-option');
+    const bundleRadios = bundleWrapper.querySelectorAll('.bundle-radio');
+    const addToCartBtn = bundleWrapper.querySelector('.bundle-add-to-cart');
+    const totalPriceSpan = bundleWrapper.querySelector('#bundle-total-price');
+
+    const productPrice = parseFloat(bundleWrapper.dataset.productPrice);
+    const variantId = bundleWrapper.dataset.variantId;
+
+    function updateTotalPrice() {
+      const selectedOption = bundleWrapper.querySelector('.bundle-option.selected');
+      if (!selectedOption) return;
+
+      const quantity = parseInt(selectedOption.dataset.quantity);
+      const discount = parseInt(selectedOption.dataset.discount);
+
+      let totalPrice = productPrice * quantity;
+      if (discount > 0) {
+        totalPrice *= (1 - discount / 100);
       }
-    });
-  });
-  
-  function updateTotalPrice() {
-    const selectedOption = bundleWrapper.querySelector('.bundle-option.selected');
-    if (!selectedOption) return;
-    
-    const quantity = parseInt(selectedOption.dataset.quantity);
-    const discount = parseInt(selectedOption.dataset.discount);
-    
-    let totalPrice = productPrice * quantity;
-    if (discount > 0) {
-      totalPrice = totalPrice * (1 - discount / 100);
+
+      totalPriceSpan.textContent = '$' + totalPrice.toFixed(2);
     }
-    
-    totalPriceSpan.textContent = '$' + totalPrice.toFixed(2);
-  }
-  
-  // Handle add to cart
-  addToCartBtn.addEventListener('click', function() {
-    const selectedOption = bundleWrapper.querySelector('.bundle-option.selected');
-    if (!selectedOption) return;
-    
-    const quantity = parseInt(selectedOption.dataset.quantity);
-    
-    // Add to cart via Shopify AJAX API
-    const formData = {
-      'items': [{
-        'id': variantId,
-        'quantity': quantity
-      }]
-    };
-    
-    fetch('/cart/add.js', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData)
-    })
-    .then(response => response.json())
-    .then(data => {
-      // Trigger cart update event
-      document.dispatchEvent(new CustomEvent('cart:updated'));
-      
-      // Optional: Show success message or redirect to cart
-      // window.location.href = '/cart';
-      
-      console.log('Product added to cart:', data);
-    })
-    .catch(error => {
-      console.error('Error adding to cart:', error);
+
+    bundleOptions.forEach((option, index) => {
+      option.addEventListener('click', () => {
+        bundleOptions.forEach(opt => opt.classList.remove('selected'));
+        option.classList.add('selected');
+        bundleRadios[index].checked = true;
+        updateTotalPrice();
+      });
     });
+
+    addToCartBtn.addEventListener('click', () => {
+      const selectedOption = bundleWrapper.querySelector('.bundle-option.selected');
+      if (!selectedOption) return;
+
+      const quantity = parseInt(selectedOption.dataset.quantity);
+
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          items: [{
+            id: variantId,
+            quantity: quantity
+          }]
+        })
+      })
+      .then(() => {
+        document.dispatchEvent(new CustomEvent('cart:updated'));
+      });
+    });
+
+    const defaultOption = bundleWrapper.querySelector('[data-quantity="2"]');
+    if (defaultOption) {
+      defaultOption.classList.add('selected');
+      updateTotalPrice();
+    }
   });
-  
-  // Initialize with 2-pack selected (most popular)
-  const defaultOption = bundleWrapper.querySelector('[data-quantity="2"]');
-  if (defaultOption) {
-    defaultOption.classList.add('selected');
-    updateTotalPrice();
-  }
 })();
 </script>
