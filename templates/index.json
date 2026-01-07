@@ -207,17 +207,6 @@
         "pickup_availability_CNjjKX": {
           "type": "pickup_availability",
           "settings": {}
-        },
-        "buy_buttons_JPnUpQ": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": true,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
         }
       },
       "block_order": [
@@ -230,8 +219,7 @@
         "description_nmCeRH",
         "sku_hmebBh",
         "variant_picker_QDgFKx",
-        "pickup_availability_CNjjKX",
-        "buy_buttons_JPnUpQ"
+        "pickup_availability_CNjjKX"
       ],
       "name": "Featured product",
       "settings": {
@@ -504,15 +492,6 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
-    },
-    "kaching_bundle_x7iTCe": {
-      "type": "kaching-bundle",
-      "name": "Kaching Bundle",
-      "settings": {
-        "title": "Choisissez votre offre",
-        "subtitle": "Plus vous achetez, plus vous économisez",
-        "reassurance_text": "Livraison rapide • Paiement sécurisé • Garantie satisfait ou remboursé"
-      }
     }
   },
   "order": [
@@ -522,7 +501,6 @@
     "images_with_text_scrolling_VMCyeh",
     "multi_column_AHq3tY",
     "image_with_text_overlay_KUrKhE",
-    "faq",
-    "kaching_bundle_x7iTCe"
+    "faq"
   ]
 }
