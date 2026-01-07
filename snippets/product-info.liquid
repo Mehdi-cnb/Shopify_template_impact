@@ -204,7 +204,7 @@
           {%- render 'inventory', product: product, low_threshold: block.settings.low_inventory_threshold, form_id: product_form_id -%}
         </div>
 {% when 'kaching_bundle' %}
-  {% render 'kaching-bundle', product: product %}
+  {% render 'driftmats-bundle', product: product %}
       {%- when 'buy_buttons' -%}
         {%- assign main_form_exists = true -%}
 
