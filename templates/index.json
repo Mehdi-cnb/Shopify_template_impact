@@ -376,25 +376,6 @@
     },
     "image_with_text_overlay_KUrKhE": {
       "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_mE96yN": {
-          "type": "heading",
-          "settings": {
-            "text": "La maîtrise au service du confort.",
-            "heading_tag": "h4"
-          }
-        },
-        "richtext_gBtA3g": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>La compression 3D épouse le corps avec précision, redessine la silhouette et offre un maintien subtil qui renforce la confiance, naturellement.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_mE96yN",
-        "richtext_gBtA3g"
-      ],
       "name": "Image with text overlay",
       "settings": {
         "full_width": true,
