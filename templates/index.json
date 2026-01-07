@@ -12,6 +12,27 @@
     "slideshow_UAAbiC": {
       "type": "slideshow",
       "blocks": {
+        "image_hBABYg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/01_720x_7f1e8a69-c9f0-471e-bc4e-f475f4d77344.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        },
         "image_dEWK4Q": {
           "type": "image",
           "settings": {
@@ -20,7 +41,7 @@
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "",
-            "title": "",
+            "title": "Élégance",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
@@ -62,28 +83,7 @@
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "",
-            "title": "Adaptabilité",
-            "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "background": "",
-            "background_gradient": ""
-          }
-        },
-        "image_hBABYg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/01_720x_7f1e8a69-c9f0-471e-bc4e-f475f4d77344.jpg",
-            "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "Élégance",
+            "title": "Confort",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
@@ -119,10 +119,10 @@
         }
       },
       "block_order": [
+        "image_hBABYg",
         "image_dEWK4Q",
         "image_Qxp8nK",
         "image_A3TzBJ",
-        "image_hBABYg",
         "image_gECMCy"
       ],
       "name": "Slideshow",
