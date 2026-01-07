@@ -239,6 +239,37 @@
         "input_text_color": ""
       }
     },
+    "images_with_text_scrolling_VMCyeh": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_MjX8Pz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/P3_3.gif",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Comment ça marche ?",
+            "content": "<p>Notre technologie 3D stimule la circulation à chaque mouvement, aidant votre corps à réduire naturellement la cellulite.</p><p>Une compression douce et ciblée tonifie les jambes, sculpte la silhouette et améliore la texture de la peau.<br/><br/>Conçu dans un tissu ultra-doux, extensible et respirant pour un confort durable tout au long de la journée.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_MjX8Pz"
+      ],
+      "name": "Images and text scrolling",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "show_counter": false,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
+        "background": "#f9f9f9",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "multi_column_AHq3tY": {
       "type": "multi-column",
       "blocks": {
@@ -332,45 +363,14 @@
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "start",
+        "gap": "small",
+        "text_alignment": "center",
         "subheading": "",
-        "title": "",
+        "title": "Elles ont adoré !",
         "content": "",
         "background": "#f0f0f0",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "images_with_text_scrolling_VMCyeh": {
-      "type": "images-with-text-scrolling",
-      "blocks": {
-        "item_MjX8Pz": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/P3_3.gif",
-            "icon": "none",
-            "icon_width": 48,
-            "title": "Comment ça marche ?",
-            "content": "<p>Notre technologie 3D stimule la circulation à chaque mouvement, aidant votre corps à réduire naturellement la cellulite.</p><p>Une compression douce et ciblée tonifie les jambes, sculpte la silhouette et améliore la texture de la peau.<br/><br/>Conçu dans un tissu ultra-doux, extensible et respirant pour un confort durable tout au long de la journée.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_MjX8Pz"
-      ],
-      "name": "Images and text scrolling",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": true,
-        "show_counter": false,
-        "desktop_image_effect": "reveal",
-        "image_position": "end",
-        "background": "#f9f9f9",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
       }
     },
     "image_with_text_overlay_KUrKhE": {
@@ -496,8 +496,8 @@
   "order": [
     "slideshow_UAAbiC",
     "featured_product_JFCyXQ",
-    "multi_column_AHq3tY",
     "images_with_text_scrolling_VMCyeh",
+    "multi_column_AHq3tY",
     "image_with_text_overlay_KUrKhE",
     "faq"
   ]
