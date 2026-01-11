@@ -414,9 +414,40 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/Gemini_Generated_Image_yvu5zeyvu5zeyvu5.png",
+        "image": "shopify://shop_images/08_720x_a4dc0f2e-e949-4fbc-9d02-26766ec7b825.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "video_r7qMVH": {
+      "type": "video",
+      "blocks": {
+        "play_kA8ABp": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_W7MYrb": {
+          "type": "heading",
+          "settings": {
+            "text": "Video",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "play_kA8ABp",
+        "heading_W7MYrb"
+      ],
+      "name": "Video",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
@@ -515,6 +546,7 @@
     "images_with_text_scrolling_VMCyeh",
     "multi_column_AHq3tY",
     "image_with_text_overlay_KUrKhE",
+    "video_r7qMVH",
     "faq"
   ]
 }
