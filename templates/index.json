@@ -219,6 +219,59 @@
         "input_text_color": ""
       }
     },
+    "faq_4P7N3N": {
+      "type": "faq",
+      "blocks": {
+        "item_hCnwLn": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship overseas?",
+            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "item_ncE3YD": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take to get my orders?",
+            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "item_eCwG8w": {
+          "type": "item",
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_hCnwLn",
+        "item_ncE3YD",
+        "item_eCwG8w"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "images_with_text_scrolling_VMCyeh": {
       "type": "images-with-text-scrolling",
       "blocks": {
@@ -305,19 +358,6 @@
             "link_style": "link"
           }
         },
-        "item_RxaRgz": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/gempages_559621678087275640-8670f129-8770-4b7f-8a34-5ba056797dc7.jpg",
-            "column_size": "3",
-            "title": "Loriane L.",
-            "heading_tag": "h4",
-            "content": "<p>★★★★★</p><p>Choquée du résultat, c'est une amie qui m'a recommandée ce leggings et le résultat est juste incroyable ! Je n'ai jamais pensé que je pouvais mieux apprécier ma silhouette</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
         "item_LWanC3": {
           "type": "item",
           "settings": {
@@ -330,6 +370,19 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_RxaRgz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/gempages_559621678087275640-8670f129-8770-4b7f-8a34-5ba056797dc7.jpg",
+            "column_size": "3",
+            "title": "Loriane L.",
+            "heading_tag": "h4",
+            "content": "<p>★★★★★</p><p>Choquée du résultat, c'est une amie qui m'a recommandée ce leggings et le résultat est juste incroyable ! Je n'ai jamais pensé que je pouvais mieux apprécier ma silhouette</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -337,8 +390,8 @@
         "item_nVXQeU",
         "item_VMbTkU",
         "item_d9hDdw",
-        "item_RxaRgz",
-        "item_LWanC3"
+        "item_LWanC3",
+        "item_RxaRgz"
       ],
       "settings": {
         "full_width": true,
@@ -355,25 +408,6 @@
     },
     "image_with_text_overlay_KUrKhE": {
       "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_mE96yN": {
-          "type": "heading",
-          "settings": {
-            "text": "La maîtrise au service du confort.",
-            "heading_tag": "h4"
-          }
-        },
-        "richtext_gBtA3g": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>La compression 3D épouse le corps avec précision, redessine la silhouette et offre un maintien subtil qui renforce la confiance, naturellement.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_mE96yN",
-        "richtext_gBtA3g"
-      ],
       "name": "Image with text overlay",
       "settings": {
         "full_width": true,
@@ -477,6 +511,7 @@
     "slideshow_UAAbiC",
     "custom_liquid_jUJ7Q4",
     "featured_product_JFCyXQ",
+    "faq_4P7N3N",
     "images_with_text_scrolling_VMCyeh",
     "multi_column_AHq3tY",
     "image_with_text_overlay_KUrKhE",
